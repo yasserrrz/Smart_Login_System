@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <style>
+      nav{
+        /* border-bottom: solid rgb(212, 0, 255) 2px; */
+        box-shadow: 0px 0px 15px rgb(255, 21, 0) ;
+      }
+      .message{
+        height: 80vh;
+        box-shadow: inset 0px 0px 200px rgba(255, 1, 1, 0.426) ;
+      }
+      a.btn{
+        box-shadow: 0px 0px 20px rgb(249, 4, 4);
+      }
+      a.btn:hover{
+        color:  rgb(249, 4, 4) !important;
+      }
+
+      h3{
+        color: rgb(255, 0, 0);
+        font-size: 3.7rem;
+      }
+    </style>
+  </head>
+  <body class="bg-black" onload="welcomUser()" >
+    <nav class="navbar navbar-expand-lg    py-3 ">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-danger " href="#">Smart Log</a>
+        <div >
+          <a href="../index.html" onclick="logOut()" class="btn btn-outline-dark">LogOut</a>
+        </div>
+      </div>
+    </nav>
+    <div class="message rounded-1 my-4  p-5 d-flex align-items-center justify-content-center">
+        <h3 id="message" class="text-center  text-capitalize p-5"></h3>
+    </div>
+    <script src="../js/main2.js"></script>
+  </body>
+</html>

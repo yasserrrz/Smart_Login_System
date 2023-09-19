@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .box{
+            color: burlywood;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        @media screen and (min-width:500px) {
+            .box{
+                width: 75%;
+            }
+        }
+        @media screen and (max-width: 499px) {
+            .box{
+                width:100% ;
+            }
+        }
+        #alertMessageSin{
+            display: none;
+        }
+        input{
+            
+        }
+    </style>
+</head>
+<body class="bg-body-secondary  ">
+    <div class="container ">
+        <div class="box bg-white px-4 py-5  mx-auto text-center shadow-lg mt-5">
+            <h2 class="mb-4 fw-bolder">
+                Smart Login System
+            </h2>
+            
+            <form action="../index.html">
+            <input type="text" id="nameInput" class="form-control  bg-info-subtle text-danger mb-3" placeholder="Enter your name">
+            <input type="email" id="emailInputSup" class="form-control bg-info-subtle text-danger mb-3" placeholder="Enter your email">
+            <input type="password" id="passwordInputSup" class="form-control bg-info-subtle text-danger mb-3" placeholder="Enter your password">
+            <h5 id="alertMessageSUP" class="text-center text-danger fw-bold m-3 fs-5  "></h5>
+            <button id="signupBtn" onclick="addUser()" type="button" class="btn btn-outline-info fs-6 my-3 w-100">Login</button>
+            <p class="fs-5">You have an account?<a href="../index.html" class="text-danger"> Sign In</a> </p>
+        </form>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
